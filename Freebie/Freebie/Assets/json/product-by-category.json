@@ -1,0 +1,94 @@
+[
+  {
+    "category": "Fruits",
+    "products": [
+      {
+        "title": "Raspberries",
+        "summary": "Fruit of a multitude of plant species",
+        "description": "A macaroon is a small cake or cookie, typically made from ground almonds, coconut or other nuts with sugar and sometimes flavorings, food coloring, glace cherries, jam or a chocolate coating or a combination of these or other ingredients.",
+        "price": 10.5,
+        "urlImage": "raspberry.png",
+        "order": 1
+      },
+      {
+        "title": "Green Grape",
+        "summary": "Fruit of a multitude of plant species",
+        "description": "A macaroon is a small cake or cookie, typically made from ground almonds, coconut or other nuts with sugar and sometimes flavorings, food coloring, glace cherries, jam or a chocolate coating or a combination of these or other ingredients.",
+        "price": 10.5,
+        "urlImage": "green-grave.png",
+        "order": 2
+      },
+      {
+        "title": "Purple Grape",
+        "summary": "Fruit of a multitude of plant species",
+        "description": "A macaroon is a small cake or cookie, typically made from ground almonds, coconut or other nuts with sugar and sometimes flavorings, food coloring, glace cherries, jam or a chocolate coating or a combination of these or other ingredients.",
+        "price": 10.5,
+        "urlImage": "purple-grave.png",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "category": "Vegetables",
+    "products": [
+      {
+        "title": "Tomato",
+        "summary": "Fruit of a multitude of plant species",
+        "description": "A macaroon is a small cake or cookie, typically made from ground almonds, coconut or other nuts with sugar and sometimes flavorings, food coloring, glace cherries, jam or a chocolate coating or a combination of these or other ingredients.",
+        "price": 10.5,
+        "urlImage": "tomato.png",
+        "order": 6
+      },
+      {
+        "title": "Carrot",
+        "summary": "Fruit of a multitude of plant species",
+        "description": "A macaroon is a small cake or cookie, typically made from ground almonds, coconut or other nuts with sugar and sometimes flavorings, food coloring, glace cherries, jam or a chocolate coating or a combination of these or other ingredients.",
+        "price": 10.5,
+        "urlImage": "carrot.png",
+        "order": 7
+      }
+    ]
+  },
+  {
+    "category": "Greens",
+    "products": [
+      {
+        "title": "Cabbage",
+        "summary": "Fruit of a multitude of plant species",
+        "description": "A macaroon is a small cake or cookie, typically made from ground almonds, coconut or other nuts with sugar and sometimes flavorings, food coloring, glace cherries, jam or a chocolate coating or a combination of these or other ingredients.",
+        "price": 10.5,
+        "urlImage": "cabbage.png",
+        "order": 5
+      },
+      {
+        "title": "Mustard",
+        "summary": "Fruit of a multitude of plant species",
+        "description": "A macaroon is a small cake or cookie, typically made from ground almonds, coconut or other nuts with sugar and sometimes flavorings, food coloring, glace cherries, jam or a chocolate coating or a combination of these or other ingredients.",
+        "price": 10.5,
+        "urlImage": "mustard.png",
+        "order": 8
+      }
+    ]
+  },
+  {
+    "category": "Bakery",
+    "products": [
+      {
+        "title": "Pink Macaroon",
+        "summary": "Fruit of a multitude of plant species",
+        "description": "A macaroon is a small cake or cookie, typically made from ground almonds, coconut or other nuts with sugar and sometimes flavorings, food coloring, glace cherries, jam or a chocolate coating or a combination of these or other ingredients.",
+        "price": 10.5,
+        "urlImage": "pink-macaroon.png",
+        "order": 3
+      },
+      {
+        "title": "Apple Pie",
+        "summary": "Fruit of a multitude of plant species",
+        "description": "A macaroon is a small cake or cookie, typically made from ground almonds, coconut or other nuts with sugar and sometimes flavorings, food coloring, glace cherries, jam or a chocolate coating or a combination of these or other ingredients.",
+        "price": 10.5,
+        "urlImage": "apple-pie.png",
+        "order": 9
+      }
+    ]
+  }
+]

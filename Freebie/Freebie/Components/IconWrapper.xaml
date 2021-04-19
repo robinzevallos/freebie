@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hkRenderes:FrameRipple 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:hkRenderes="clr-namespace:Haka.Renderers;assembly=Haka.Renderers"
+    x:Class="Freebie.Components.IconWrapper"
+    
+    BackgroundColor="#FFF"
+    CornerRadius="10"    
+    Elevation="10"
+    Padding="10"
+    RippleColor="#A9AEE5"
+    />

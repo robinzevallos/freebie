@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hakaTemplate:BaseHeaderTemplate 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:hakaTemplate="clr-namespace:Haka.Templates;assembly=Haka"
+    xmlns:components="clr-namespace:Freebie.Components"
+    xmlns:icons="clr-namespace:Freebie.Icons"
+    x:Class="Freebie.HeaderTemplate"  
+    >
+    <Grid>
+        <Label
+            x:Name="titleLabel" 
+            FontFamily="KhulaSemiBold"
+            FontSize="16"
+            HorizontalTextAlignment="Center"
+            TextColor="#5A5A5A"
+            VerticalTextAlignment="Center" 
+            />
+        <components:IconWrapper 
+            x:Name="backTemplate"
+            HorizontalOptions="StartAndExpand"
+            VerticalOptions="CenterAndExpand"
+            Margin="20,0,0,0"      
+            >
+            <icons:BackIcon />
+        </components:IconWrapper>
+    </Grid>
+    <ContentView.Padding>
+        <OnPlatform
+            x:TypeArguments="Thickness"
+            Android="0,5,0,0"
+            iOS="0,25,0,0"
+            />
+    </ContentView.Padding>
+</hakaTemplate:BaseHeaderTemplate>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Path 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Freebie.Icons.SearcherIcon"
+    
+    Aspect="Uniform"
+    HeightRequest="18"
+    WidthRequest="18"
+    Stroke="#A9AEE5" 
+    StrokeLineCap="Round" 
+    StrokeLineJoin="Round" 
+    StrokeThickness="1.5"
+    Data="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z M17.5 17.5L13.875 13.875" 
+    />

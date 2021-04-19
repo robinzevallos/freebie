@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Freebie.Views.Product.CircleIcon"
+    
+    Scale="0.7"
+    WidthRequest="320" 
+    HorizontalOptions="CenterAndExpand"
+    >
+    <Path
+        Aspect="None"
+        Stroke="#7AA9AEE5"
+        StrokeThickness="1"
+        Data="
+            M 160 50
+            a 150 50 0 1 0 1 0 z
+            M 170 147.5
+            l 2.5 2.5
+            l -2.5 2.5
+            M 150.5 147.5
+            l -2.5 2.5
+            l 2.5 2.5
+        "
+    />
+    <Path
+        Aspect="None"
+        Data="
+            M 160 145
+            a 5 5 0 1 0 1 0 z
+        "
+        Fill="#FFF"
+        Stroke="#C7CCE9"
+        StrokeThickness="4"
+        />
+</Grid>

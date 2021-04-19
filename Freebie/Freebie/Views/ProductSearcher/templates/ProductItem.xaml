@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Freebie.Views.ProductSearcher.ProductItem"
+    >
+    <StackLayout
+        Padding="5"
+        Orientation="Horizontal"
+        Spacing="10"
+        >
+        <Frame
+            BackgroundColor="#0D1A1F96"
+            CornerRadius="30"
+            HeightRequest="30"
+            HorizontalOptions="Start"
+            Padding="15"
+            VerticalOptions="CenterAndExpand"
+            WidthRequest="30"
+            HasShadow="False"
+            >
+            <Image 
+                Source="{Binding Image}"  
+                />
+        </Frame>
+        <StackLayout
+            VerticalOptions="Center"
+            >
+            <Label
+                FontFamily="Khula"
+                FontSize="14"
+                Text="{Binding Title}"
+                TextColor="#1A1F96"
+                />
+            <Label
+                FontFamily="Khula"
+                TextColor="#6B1A1F96"
+                FontSize="12"
+                Text="{Binding Summary}" 
+                />
+        </StackLayout>
+    </StackLayout>
+</ContentView>

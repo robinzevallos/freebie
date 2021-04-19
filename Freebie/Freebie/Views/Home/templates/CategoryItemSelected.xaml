@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Freebie.Views.Home.CategoryItemSelected"
+    
+    Margin="0,0,20,0"
+    Spacing="0"
+    >
+    <Label
+        FontSize="16"
+        FontFamily="KhulaSemiBold"
+        Padding="5,0"
+        Text="{Binding Name}"
+        TextColor="#FF7D64"
+        />
+    <Path 
+        Aspect="Uniform"
+        WidthRequest="20"
+        StrokeLineCap="Round"
+        Stroke="#FF7D64"
+        StrokeThickness="2.5"
+        TranslationY="-5"
+        Data="M4 4 l20 0"
+        />
+</StackLayout>

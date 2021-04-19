@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:hkRenderers="clr-namespace:Haka.Renderers;assembly=Haka.Renderers"
+    xmlns:icons="clr-namespace:Freebie.Icons"
+    x:Class="Freebie.Views.Product.TapBar"
+    >
+    <Grid>
+        <!--TapBar Shape-->
+        <Path
+            Aspect="Fill"
+            HeightRequest="80"
+            Stroke="#EEE" 
+            StrokeThickness="2"
+            Data="
+                M 10 10
+                h 60
+                c 40 0 20 50 60 50
+                c 40 0 20 -50 60 -50
+                h 60
+            "
+            />
+        <Grid>
+            <StackLayout
+                HorizontalOptions="CenterAndExpand"
+                Orientation="Horizontal" 
+                Spacing="15"
+                VerticalOptions="CenterAndExpand"
+                TranslationX="-20"
+                >
+                <!--Grid Icon-->
+                <hkRenderers:FrameRipple
+                    x:Name="grid"
+                    RippleColor="#A9AEE5"  
+                    Padding="10"
+                    CornerRadius="5"
+                    >
+                    <icons:GridIcon />
+                </hkRenderers:FrameRipple>
+                <!--Tag Icon-->
+                <hkRenderers:FrameRipple
+                    x:Name="tag"
+                    RippleColor="#A9AEE5"  
+                    Padding="10"
+                    CornerRadius="5"
+                    >
+                    <icons:TagIcon />
+                </hkRenderers:FrameRipple>
+            </StackLayout>
+            <StackLayout 
+                HorizontalOptions="CenterAndExpand" 
+                Orientation="Horizontal" 
+                Spacing="15"
+                VerticalOptions="CenterAndExpand"
+                TranslationX="20"
+                Grid.Column="1"
+                >
+                <!--Shopping Cart Icon-->
+                <hkRenderers:FrameRipple
+                    x:Name="shoppingCart"
+                    RippleColor="#A9AEE5"  
+                    Padding="10"
+                    CornerRadius="5"
+                    >
+                    <icons:ShoppingCartIcon />
+                </hkRenderers:FrameRipple>
+                <!--Settings Icon-->
+                <hkRenderers:FrameRipple
+                    x:Name="settings"
+                    RippleColor="#A9AEE5" 
+                    Padding="10"
+                    CornerRadius="5"
+                    >
+                    <icons:GearIcon />
+                </hkRenderers:FrameRipple>
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentView>

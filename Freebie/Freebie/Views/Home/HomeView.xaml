@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<haka:SingleView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:components="clr-namespace:Freebie.Components"
+    xmlns:local="clr-namespace:Freebie.Views.Home"
+    xmlns:haka="clr-namespace:Haka;assembly=Haka"
+    x:Class="Freebie.Views.HomeView"
+    
+    BackgroundColor="#F2F7FD"
+    HasHeader="False"
+    >
+    <ScrollView>
+        <StackLayout>
+            <local:Header 
+                OnMenu="OnMenu"
+                OnSearch="OnSearch"
+                />
+            <components:NavBar 
+                ItemsSource="{Binding Categories}"
+                ItemTemplate="{DataTemplate local:CategoryItem}"
+                ItemSelectedTemplate="{DataTemplate local:CategoryItemSelected}"
+                OnItemSelected="OnCategorySelected"
+                IndexSelected="0"
+                Padding="20"
+                />
+            <components:MultiCollection 
+                ItemsSource="{Binding ProductsByCategory}"
+                ItemTemplate="{DataTemplate local:ProductItem}"
+                OnItemSelected="OnProductSelected"
+                PromotionItemTemplate="{DataTemplate local:PromotionItem}"
+                />
+        </StackLayout>
+    </ScrollView>
+</haka:SingleView>

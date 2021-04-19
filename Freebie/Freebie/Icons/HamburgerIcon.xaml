@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Path 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Freebie.Icons.HamburgerIcon"
+    
+    Aspect="Uniform"
+    HeightRequest="18"  
+    Stroke="#A9AEE5" 
+    StrokeLineCap="Round" 
+    StrokeLineJoin="Round" 
+    StrokeThickness="1.5"
+    WidthRequest="18" 
+    Data="
+        M 2.5 10
+        H 17.5 
+        M 2.5 5
+        H 10 
+        M 12.5 15
+        H 20
+    " 
+    />

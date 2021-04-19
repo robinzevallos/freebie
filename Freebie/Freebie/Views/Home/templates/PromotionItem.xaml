@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Freebie.Views.Home.PromotionItem">
+    <Frame
+        BackgroundColor="#FF7D64"
+        CornerRadius="26"
+        Padding="0"
+        Margin="10"
+        HeightRequest="180"
+        VerticalOptions="FillAndExpand"
+        IsClippedToBounds="True"
+        HasShadow="False"
+        >
+        <Grid>
+            <Ellipse 
+                Fill="#8184EE"
+                WidthRequest="126"
+                HeightRequest="126"
+                HorizontalOptions="Start" 
+                VerticalOptions="Start"
+                TranslationY="-50"
+                TranslationX="-60"
+                StrokeThickness="0"
+                />
+            <Ellipse 
+                Fill="#FFBE40"
+                WidthRequest="43"
+                HeightRequest="43"
+                HorizontalOptions="Start" 
+                VerticalOptions="Start"
+                TranslationX="105"
+                TranslationY="25"
+                StrokeThickness="0"
+                />
+            <Ellipse 
+                Fill="#FF5E5E"
+                WidthRequest="86"
+                HeightRequest="86"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                TranslationX="40"
+                TranslationY="30"
+                StrokeThickness="0"
+                />
+            <StackLayout Padding="10, 20">
+                <Label
+                    FontFamily="KhulaSemiBold"
+                    FontSize="12"
+                    Text="SALE"
+                    TextColor="#FFF"
+                    HorizontalTextAlignment="Center"
+                    Opacity="0.61"
+                    />
+                <Label
+                    FontFamily="KhulaSemiBold"
+                    FontSize="36"
+                    Text="50% off"
+                    TextColor="#FFF"
+                    HorizontalTextAlignment="Center"
+                    />
+                <Label
+                    FontFamily="KhulaSemiBold"
+                    FontSize="12"
+                    HorizontalTextAlignment="Center"
+                    Opacity="0.61"
+                    Text="Use promotional code"
+                    TextColor="#FFF"
+                    />
+                <Label
+                    FontFamily="KhulaSemiBold"
+                    FontSize="18"
+                    HorizontalTextAlignment="Center"
+                    Text="S P R I N G"
+                    TextColor="#FFF"
+                    />
+            </StackLayout>
+        </Grid>
+    </Frame>
+</ContentView>

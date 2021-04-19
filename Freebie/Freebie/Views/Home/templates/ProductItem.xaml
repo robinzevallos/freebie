@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hkRenderers:FrameRipple 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:icons="clr-namespace:Freebie.Icons"
+    xmlns:hkRenderers="clr-namespace:Haka.Renderers;assembly=Haka.Renderers"
+    x:Class="Freebie.Views.Home.ProductItem"
+    
+    CornerRadius="26"
+    Elevation="10"
+    Margin="10"
+    Padding="15, 15, 15, 25"
+    RippleColor="#DDD"
+    AdjustShadowPosition="20"
+    >
+    <StackLayout>
+        <!--Category Tag-->
+        <Label
+            FontFamily="KhulaSemiBold"
+            FontSize="8"
+            Text="{Binding CategoryTag}"
+            TextColor="#A9AEE5"
+            />
+        <StackLayout Spacing="0">
+            <Image
+                HeightRequest="50"
+                Source="{Binding Image}"  
+                />
+            <!--Shadow-->
+            <StackLayout 
+                HeightRequest="35"
+                HorizontalOptions="Center"
+                Margin="0,-5"
+                ScaleY="0.5"
+                WidthRequest="35"
+                >
+                <StackLayout.Background>
+                    <RadialGradientBrush 
+                        Center="0.5,0.5"
+                        Radius="0.5"
+                        >
+                        <GradientStop 
+                            Color="#DDD"
+                            Offset="0.1"
+                            />
+                        <GradientStop 
+                            Color="Transparent"
+                            Offset="1.0"
+                            />
+                    </RadialGradientBrush>
+                </StackLayout.Background>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Spacing="0">
+            <!--Title-->
+            <Label
+                FontFamily="KhulaSemiBold"
+                FontSize="16"
+                Text="{Binding Title}" 
+                TextColor="#1A1F96"
+                LineBreakMode="TailTruncation"
+                />
+            <!--Description-->
+            <Label
+                FontFamily="Khula"
+                FontSize="9"
+                Text="{Binding Summary}" 
+                TextColor="#991A1F96"
+                Margin="0,0,0,15"
+                />
+            <FlexLayout 
+                JustifyContent="SpaceBetween"
+                >
+                <!--Price-->
+                <Label
+                    FontFamily="KhulaSemiBold"
+                    FontSize="18"
+                    Text="{Binding Price}"
+                    TextColor="#1A1F96"
+                    VerticalOptions="Fill"
+                    />
+                <hkRenderers:FrameRipple 
+                    CornerRadius="5"
+                    Padding="5"
+                    RippleColor="#DDD"
+                    Margin="0,-5,0,0"
+                    >
+                    <icons:PlusIcon />
+                </hkRenderers:FrameRipple>
+            </FlexLayout>
+        </StackLayout>
+    </StackLayout>
+</hkRenderers:FrameRipple>

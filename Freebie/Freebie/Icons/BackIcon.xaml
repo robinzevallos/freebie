@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Path 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Freebie.Icons.BackIcon"
+    
+    Aspect="None"
+    HeightRequest="18"
+    WidthRequest="18"
+    Stroke="#A9AEE5" 
+    StrokeLineCap="Round" 
+    StrokeLineJoin="Round" 
+    StrokeThickness="1.5"
+    Data="
+        M14.25 9H3.75
+        M9 14.25L3.75 9L9 3.75
+    " 
+  />

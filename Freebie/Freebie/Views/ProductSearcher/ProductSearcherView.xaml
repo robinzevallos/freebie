@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<haka:SingleView
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:components="clr-namespace:Freebie.Components"
+    xmlns:haka="clr-namespace:Haka;assembly=Haka"
+    xmlns:local="clr-namespace:Freebie.Views.ProductSearcher"
+    x:Class="Freebie.Views.ProductSearcherView"
+    BackgroundColor="#FFF"
+    Title="Searcher"
+    HasHeader="True"
+    >
+    <Grid
+        RowDefinitions="60, *"
+        Padding="10"
+        >
+        <!--Box Searcher-->
+        <Grid>
+            <Entry
+                Text="{Binding Searcher, Mode=TwoWay}"
+                TextColor="#777"
+                Placeholder="Search..."
+                />
+            <Button
+                BackgroundColor="Transparent"
+                Text="X" 
+                TextColor="#444"
+                FontSize="12"
+                HeightRequest="35"
+                WidthRequest="35"
+                HorizontalOptions="End"
+                VerticalOptions="Center"
+                Event.OnTap="Clean"
+                />
+        </Grid>
+
+        <components:SimpleCollection
+            Grid.Row="1"
+            ItemTemplate="{DataTemplate local:ProductItem}"
+            ItemsSource="{Binding Products}"
+            OnItemSelected="OnProductSelected"
+            />
+    </Grid>
+</haka:SingleView>

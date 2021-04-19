@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<haka:SingleView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:icons="clr-namespace:Freebie.Icons"
+    xmlns:hkRenderers="clr-namespace:Haka.Renderers;assembly=Haka.Renderers"
+    xmlns:local="clr-namespace:Freebie.Views.Product"
+    xmlns:haka="clr-namespace:Haka;assembly=Haka"
+    x:Class="Freebie.Views.ProductView"
+    BackgroundColor="#F2F7FD"
+    HasHeader="False"
+    >
+    <StackLayout Spacing="0">
+        <StackLayout.Background>
+            <LinearGradientBrush 
+                StartPoint="0,0"
+                EndPoint="1,0"
+                >
+                <GradientStop 
+                    Color="#C2C6D8"
+                    Offset="0.1"                  
+                    />
+                <GradientStop 
+                    Color="#F2F7FD"
+                    Offset="1.0"
+                    />
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+        <local:Header
+            OnBack="OnBack"
+            OnStart="OnStart"
+            />
+
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <Grid VerticalOptions="CenterAndExpand">
+                    <local:CircleIcon />
+                    <Image 
+                        Source="{Binding Model.Image}"
+                        HeightRequest="100"
+                        WidthRequest="100"
+                        Aspect="AspectFit"
+                        VerticalOptions="CenterAndExpand"
+                        />
+                </Grid>
+                <hkRenderers:FrameRipple 
+                    CornerRadius="30,30,0,0"
+                    BorderColor="Transparent"
+                    BackgroundColor="#FFF"
+                    RippleColor="Transparent"
+                    Elevation="30"
+                    VerticalOptions="EndAndExpand"
+                    TranslationY="1"
+                    Padding="10, 50"
+                    >
+                    <StackLayout Padding="20, 0">
+                        <!--Title-->
+                        <Label
+                            FontFamily="KhulaSemiBold"
+                            FontSize="36"
+                            Text="{Binding Model.Title}" 
+                            TextColor="#FF7C63"
+                            LineBreakMode="TailTruncation"
+                            />
+                        <FlexLayout JustifyContent="SpaceBetween">
+                            <StackLayout 
+                                Spacing="20"
+                                Orientation="Horizontal"
+                                >
+                                <hkRenderers:FrameRipple 
+                                    CornerRadius="5"
+                                    Padding="5"
+                                    RippleColor="#DDD"
+                                    Margin="0,-5,0,0"
+                                    OnTap="OnLess"
+                                    >
+                                    <icons:LessIcon />
+                                </hkRenderers:FrameRipple>
+                                <!--Amount-->
+                                <Label
+                                    FontFamily="KhulaSemiBold"
+                                    FontSize="18"
+                                    Text="{Binding Value}" 
+                                    TextColor="#1A1F96"
+                                    VerticalOptions="Center"
+                                    />
+                                <hkRenderers:FrameRipple 
+                                    CornerRadius="5"
+                                    Padding="5"
+                                    RippleColor="#DDD"
+                                    Margin="0,-5,0,0"
+                                    OnTap="OnPlus"
+                                    >
+                                    <icons:PlusIcon />
+                                </hkRenderers:FrameRipple>
+                            </StackLayout>
+                            <!--Price-->
+                            <Label
+                                FontFamily="KhulaSemiBold"
+                                FontSize="24"
+                                Text="{Binding Model.Price}" 
+                                TextColor="#1A1F96"
+                                />
+                        </FlexLayout>
+                        <!--Description-->
+                        <Label                       
+                            FontFamily="Khula"
+                            FontSize="14"
+                            LineHeight="1.25"
+                            Text="{Binding Model.Description}"
+                            TextColor="#6B1A1F96"
+                            />
+                    </StackLayout>
+                </hkRenderers:FrameRipple>
+            </StackLayout>
+        </ScrollView>
+        <Grid
+            BackgroundColor="#FFF"
+            VerticalOptions="End"
+            >
+            <local:TapBar
+                OnGrid="OnGrid"
+                OnSettings="OnSettings"
+                OnShppingCart="OnShppingCart"
+                OnTag="OnTag"
+                />
+            <!--Add Button-->
+            <hkRenderers:FrameRipple
+                BackgroundColor="#FF7D64"
+                CornerRadius="35"
+                Elevation="15"
+                HeightRequest="70"
+                HorizontalOptions="Center"
+                Margin="0, -35, 0, 0"
+                RippleColor="#FFA897"
+                VerticalOptions="Center"
+                WidthRequest="70"
+                >
+                <icons:PlusIcon
+                    Aspect="Fill"
+                    HeightRequest="18"
+                    HorizontalOptions="CenterAndExpand"
+                    Stroke="#FFF"
+                    VerticalOptions="CenterAndExpand"
+                    WidthRequest="18"
+                    />
+            </hkRenderers:FrameRipple>
+        </Grid>
+    </StackLayout>
+</haka:SingleView>
